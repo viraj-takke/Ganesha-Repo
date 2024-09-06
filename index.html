@@ -4,72 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>गणेश चतुर्थी २०२४</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     <style>
         body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: radial-gradient(circle, #ffe4b5, #ffcc80);
-    font-family: 'Arial', sans-serif;
-}
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle, #ffe4b5, #ffcc80);
+            font-family: 'Roboto', sans-serif;
+        }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-.ganesha-portrait {
-    animation: float 5s ease-in-out infinite;
-}
+        .ganesha-portrait {
+            animation: float 5s ease-in-out infinite, bounce 2s ease-in-out infinite;
+        }
 
-.ganesha-svg {
-    width: 300px;
-    height: auto;
-}
+        .ganesha-svg {
+            width: 300px;
+            height: auto;
+            animation: scale 5s ease-in-out infinite;
+        }
 
-.greeting {
-    margin-top: 20px;
-    font-size: 24px;
-    color: #d00000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    animation: glow 2s ease-in-out infinite alternate;
-}
+        .greeting {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #d00000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-family: 'Montserrat', sans-serif;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
 
-/* Animations */
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
+        .verse {
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(90deg, #ff6f61, #d00000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: slideIn 1s ease-out;
+        }
 
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px #fff, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff4500, 0 0 25px #ff4500;
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff4500, 0 0 60px #ff4500;
-    }
-}
+        .signature {
+            font-size: 18px;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 20px;
+            padding: 15px 20px;
+            background: linear-gradient(90deg, #ff6f61, #d00000);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ffcc80;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s ease;
+        }
 
+        .signature:hover {
+            background: linear-gradient(90deg, #d00000, #ff6f61);
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes scale {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff4500, 0 0 25px #ff4500;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff4500, 0 0 60px #ff4500;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <p class="verse">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। <br/> निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
         <div class="ganesha-portrait">
             <!-- Embed the downloaded SVG -->
-            <img src="Ganesha-3.svg" alt="Ganesha" class="ganesha-svg"/>
+            <img src="Ganesha-4.svg" alt="Ganesha" class="ganesha-svg"/>
         </div>
         <h1 class="greeting">गणेश चतुर्थी २०२४च्या हार्दिक शुभेच्छा</h1>
+        <footer class="signature">
+            शुभेच्छुक - विराज टक्के आणि परिवार
+        </footer>
     </div>
 </body>
 </html>
